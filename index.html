@@ -1,17 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<style>
-
-</style>
-<body>
-
-
-
-	
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+        <style>
+                section {
+                        height: 40vh;
+                        overflow-y: scroll;
+                }
+                #section1 {
+                        border-bottom: 5px solid black;
+                }
+                #section1::before {
+                        background-image: url("https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+                        background-size: stretch;
+                        background-position: center;
+                        content: "";
+                        position: absolute;
+                        width:100%;
+                        height: 40vh;
+                        z-index: -2;
+                        opacity: 0.3;
+                }
+                #section2 {
+                        padding: 2em;
+                        color: white;
+                        background: rgb(131,58,180);
+                        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,211,253,1) 50%, rgba(252,176,69,1) 100%);
+                        border-bottom: 5px solid black;
+                }
+                h2 {
+                        text-align: center;
+                        text-decoration: underline overline;
+                }
+                .stanzas {
+                        text-align: justify;
+                        white-space: pre;
+                        width: 50vw;
+                        margin-left: auto;
+                        margin-right: auto;
+                }
+                .stanzas:hover {
+                        outline: 2px double red;
+                }
+                .first-word {
+                        font-weight: bold;
+                }
+                div {
+                        width: 400px;
+                        height: 300px;
+                        margin: auto auto auto auto;
+                        background-color: white;
+                        border-radius: 4px;
+                        padding: 5px;
+                        text-align: center;
+                        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                }
+                div > h2 {
+                        text-decoration: none;
+                        color: black;
+                }
+        </style>
+  </head>
+  <body>
+        <section id="section1">
+                <h1>Sample Poem</h1>
+                <h2>The Forsaken Wife</h2>
+                <p class="stanzas">
+                        <span class="first-word">Methinks</span>, ’tis strange you can’t afford 
+                        One pitying look, one parting word; 
+                        Humanity claims this as due, 
+                        But what’s humanity to you?
+                </p>
+                <p class="stanzas">
+                        <span class="first-word">Cruel</span> man! I am not blind, 
+                        Your infidelity I find; 
+                        Your want of love my ruin shows, 
+                        My broken heart, your broken vows. 
+                        Yet maugre all your rigid hate, 
+                        I will be true in spite of fate; 
+                        And one preeminence I’ll claim, 
+                        To be for ever still the same. 
+                </p>
+                <p class="stanzas">
+                        <span class="first-word">Show</span> me a man that dare be true, 
+                        That dares to suffer what I do; 
+                        That can for ever sigh unheard, 
+                        And ever love without regard: 
+                        I then will own your prior claim 
+                        To love, to honour, and to fame; 
+                        But till that time, my dear, adieu, 
+                        I yet superior am to you. 
+                </p>
+        </section>
+        <section id="section2">
+                <h1>Section 2</h1>
+                <div>
+                        <h2>My Div</h2>
+                </div>
+        </section>
+    <script src="script.js"></script>
+  </body>
 </html>
